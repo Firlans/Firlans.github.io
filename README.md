@@ -1,11 +1,11 @@
 # Hi there, I'm Firlan Syah! 👋
 
 ## 🚀 About Me
-I'm a Computer Science student at Universitas Pamulang, passionate about backend development and innovative technologies. Currently, I'm looking forward to contributing to Erajaya as a Backend Developer intern.
+I'm a Computer Science student at Universitas Pamulang, passionate about backend development and innovative technologies.
 
 ## 🛠 Skills
 - **Languages**: JavaScript, Python, Java
-- **Frameworks**: Node.js, Express.js, Django
+- **Frameworks**: Node.js, Express.js
 - **Databases**: MySQL, MongoDB
 - **Tools**: Git, Docker, Postman
 
