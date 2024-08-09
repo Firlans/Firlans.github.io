@@ -10,7 +10,8 @@ I'm a Computer Science student at Universitas Pamulang, passionate about backend
 - **Tools**: Git, Docker, Postman
 
 ## 📈 GitHub Stats
-!Firlan's GitHub stats
+![Firlan's GitHub stats](https://github-readme-stats.vercel.app/api?username=firlans)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=firlans)
 
 ## 🔗 Connect with Me
 !LinkedIn
