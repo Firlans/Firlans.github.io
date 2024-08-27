@@ -1,168 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firlan Syah - Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/582f02953a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Document</title>
-</head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <a href="#" class="logo">FS</a>
+          <button class="hamburger" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#experiences" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <h1>Firlan Syah</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#Experiences">Experiences</a>
-      <a href="#Projects">Projects</a>
-      <a href="#Skills-and-Tools">Skills & Tools</a>
-      <a href="#Contact">Contact</a>
-    </nav>
-  </header>
-  <main class="full-screen">
-    <div class="avatar-card">
-      <img src="" alt="" class="avatar" />
-      <h2>Firlan Syah</h2>
-      <h3>Programmer | Content Creator</h3>
-    </div>
-    <p class="description">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores eos
-      accusantium eius provident nemo neque numquam iusto! Nisi, animi
-      doloremque ratione, officiis maiores rem, iste porro ex maxime totam
-      unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam laborum rerum laboriosam vel ipsa numquam
-      voluptatem possimus laudantium quia quae!
-    </p>
-  </main>
-  <section id="Experiences" class="experiences full-screen">
-    <h2>Experiences</h2>
-    <div class="card">
-      <h3>Lokpro Media</h3>
-      <h4>Content Researcher</h4>
-      <p class="periode"> des 2022 - juni 2023 </p>
-      <img src="./assets/images/lokpromedia-logo.png" alt="Lokpro Media">
-      <ul>
-        <li>mencari bahan materi untuk dijadikan content menarik oleh devisi content writer</li>
-        <li>menjadi tahap awal dalam pembuatan content</li>
-        <li>berperan menjadi vice-keader</li>
-        <li>melatih anggota baru terutama dalam hal teknis </li>
-        <li>melaporkan perkembangan tim kepada leader</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Develophilia </h3>
-      <h4>Research & Development</h4>
-      <p class="periode"> des 2022 - mar 2023 </p>
-      <img src="./assets/images/develophilia-logo.jpeg" alt="Develophilia">
-      <ul>
-        <li>Melakukan Research tentang Social Development yang berguna untuk para viewer</li>
-        <li>Menyediakan Content yang menarik</li>
-        <li>menjadi seorang penanggung jawab proker</li>
-        <li>aktif melakukan meeting setiap minggu dengan para penanggung jawab yang lain agar menghasilkan Content yang
-          berhubungan </li>
-          
-      </ul>
-    </div>
-  </section>
-  <section id="Projects" class="projects full-screen">
-    <h2>Projects</h2>
-  </section>
-  <section id="Skills-and-Tools" class="skills-and-tools full-screen">
-    <h2>Skills and Tools</h2>
-    <div class="boards">
-      <div class="board">
-        <h3>Skills</h3>
-        <div class="parts">
-          <div class="part">
-            <div class="part-name">Web Development</div>
-            <div class="icons">
-              <div class="icon">
-                <img src="./assets/images/html-5.png" alt="html">
-                <span>HTML</span>
-              </div>
-              <div class="icon">
-                <img src="./assets/images/css-3.png" alt="css">
-                <span>CSS</span>
-              </div>
-              <div class="icon">
-                <img src="./assets/images/js.png" alt="js">
-                <span>Javascript</span>
-              </div>
-            </div>
-          </div>
-          <div class="part">
-            <div class="part-name">Backend</div>
-            <div class="icons">
-              <div class="icon">
-                <img src="./assets/images/node-js.png" alt="nodejs">
-                <span>nodejs</span>
-              </div>
-            </div>
-          </div>
-          <div class="part">
-            <div class="part-name">DBMS</div>
-            <div class="icons">
-              <div class="icon">
-                <img src="./assets/images/mysql.png" alt="mysql">
-                <span>mysql</span>
-              </div>
-              <div class="icon">
-                <img src="./assets/images/mongodb.png" alt="mongodb">
-                <span>mongodb</span>
-              </div>
-            </div>
-          </div>
-          <div class="part">
-            <div class="part-name">Framework</div>
-            <div class="icons">
-              <div class="icon">
-                <img src="./assets/images/bootstrap.png" alt="bootstrap">
-                <span>bootstrap</span>
-              </div>
-            </div>
+    <main id="home">
+      <div class="container">
+        <div class="hero">
+          <img
+            src="./assets/images/profile-picture.png"
+            alt="Firlan Syah"
+            class="profile-picture"
+          />
+          <div class="hero-content">
+            <h1>Firlan Syah</h1>
+            <p class="tagline">Back-end Developer | Computer Science Student</p>
+            <p class="description">
+              I'm passionate about creating innovative solutions and exploring
+              cutting-edge technologies.
+            </p>
+            <a href="#contact" class="cta-button">Get in touch</a>
           </div>
         </div>
       </div>
-      <div class="board">
-        <h3>Tools</h3>
-        <div class="parts">
-          <div class="part">
-            <div class="part-name">Programming</div>
-            <div class="icons">
-              <div class="icon">
-                <img src="./assets/images/visual-studio-code.png" alt="visual studio code">
-                <span>VSCode</span>
-              </div>
-              <div class="icon">
-                <img src="./assets/images/git.png" alt="git">
-                <span>GIT</span>
-              </div>
-              <div class="icon">
-                <img src="./assets/images/github.png" alt="github">
-                <span>Github</span>
-              </div>
-            </div>
-          </div>
-          <div class="part">
-            <div class="part-name">UI/UX</div>
-            <div class="icons">
-              <div class="icon">
-                <img src="./assets/images/adobe-xd.png" alt="adobe xd">
-                <span>adobe XD</span>
-              </div>
-              <div class="icon">
-                <img src="./assets/images/illustrator.png" alt="adobe illustrator">
-                <span>adobe illustrator</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="Contact" class="contact">
-    <h2>Contact</h2>
-  </section>
-  <footer>created by &copy;Firlan Syah</footer>
-</body>
+    </main>
 
+    <section id="experiences">
+      <ul class="cards-list">
+        <li class="card">
+          <h2>develophilia</h2>
+          <p>research and development</p>
+          <ul class="tasks-list">
+            <li></li>
+          </ul>
+          <img src="./assets/images/develophilia-logo.jpeg" alt="develophilia-logo">
+        </li>
+      </ul>
+    </section>
+
+    <section id="Projects">
+      
+    </section>
+
+    <section id="about">
+      <!-- Add more about yourself here -->
+    </section>
+
+    <footer id="contact">
+      <!-- Add contact information and form here -->
+    </footer>
+
+    <button id="themeSwitch" class="theme-switch" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="./assets/javscript/script.js"></script>
+  </body>
 </html>
