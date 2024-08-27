@@ -44,4 +44,25 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  // Slide-in animation
+  const slideInElements = document.querySelectorAll(".slide-in");
+
+  function checkSlide() {
+    slideInElements.forEach((element) => {
+      const slideInAt =
+        window.scrollY + window.innerHeight - element.offsetHeight / 2;
+      const elementBottom = element.offsetTop + element.offsetHeight;
+      const isHalfShown = slideInAt > element.offsetTop;
+      const isNotScrolledPast = window.scrollY < elementBottom;
+
+      if (isHalfShown && isNotScrolledPast) {
+        element.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkSlide);
+  window.addEventListener("resize", checkSlide);
+  checkSlide(); // Check on initial load
 });
