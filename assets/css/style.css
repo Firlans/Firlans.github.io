@@ -70,7 +70,6 @@ nav .container {
 }
 
 .nav-item {
-  ;
   margin-left: 2rem;
 }
 
@@ -337,8 +336,9 @@ h1 {
     flex-direction: column;
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    right: 0;
+    height: 100vh;
+    width: 50%;
     background-color: var(--card-background);
     padding: 1rem 0;
   }
@@ -347,7 +347,7 @@ h1 {
     display: flex;
   }
 
-  .nav-item {
+  .nav-link {
     margin: 0.5rem 0;
   }
 
