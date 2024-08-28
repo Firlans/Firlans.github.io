@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (isHalfShown && isNotScrolledPast) {
         element.classList.add("active");
+      } else {
+        element.classList.remove("active");
       }
     });
   }
@@ -65,4 +67,13 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", checkSlide);
   window.addEventListener("resize", checkSlide);
   checkSlide(); // Check on initial load
+
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
 });
