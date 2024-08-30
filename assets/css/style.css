@@ -30,8 +30,13 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
-  line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--background-color);
+  background-image: url("../images/subtle-tech-background-svg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .container {
@@ -95,53 +100,63 @@ nav .container {
 
 /* Hero Section */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5rem 0;
-  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  padding: 10rem 0;
+}
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .profile-picture {
   width: 300px;
-  height: 300px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--primary-color);
 }
 
-.hero-content {
-  max-width: 500px;
-}
-
-h1 {
+.hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   color: var(--primary-color);
 }
 
-.tagline {
+.hero .tagline {
   font-size: 1.2rem;
-  color: var(--accent-color);
   margin-bottom: 1rem;
+  color: var(--accent-color);
 }
 
-.description {
+.hero .description {
+  color: var(--secondary-color);
+  font-weight: 500;
   margin-bottom: 2rem;
 }
 
 .cta-button {
-  display: inline-block;
   background-color: var(--primary-color);
   color: white;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 .cta-button:hover {
   background-color: var(--accent-color);
+  transform: translateY(-2px);
 }
 
 /* Experiences Section */
@@ -176,7 +191,6 @@ h1 {
 
 .company-logo {
   width: 100%;
-  height: auto;
   object-fit: cover;
 }
 
@@ -210,6 +224,7 @@ h1 {
 .card li {
   margin-bottom: 0.5rem;
 }
+
 /* experiences style end */
 
 /* projects styles start */
@@ -234,7 +249,6 @@ h1 {
 
 .project-image {
   width: 100%;
-  height: 200px;
   object-fit: cover;
 }
 
@@ -287,6 +301,7 @@ h1 {
 .project-link:hover {
   background-color: var(--primary-color);
 }
+
 /* projects styles end */
 
 /* About Section start*/
@@ -319,7 +334,6 @@ h1 {
 
 .education-logo {
   width: 80px;
-  height: 80px;
   object-fit: contain;
   margin-right: 1.5rem;
 }
@@ -519,7 +533,6 @@ h1 {
     position: absolute;
     top: 100%;
     right: 0;
-    height: 100vh;
     width: 50%;
     background-color: var(--card-background);
     padding: 1rem 0;
